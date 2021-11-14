@@ -1,6 +1,7 @@
 ﻿
-$OriginPath = "C:\TEST"
-$CopyPath = "C:\FULL\TESTFULL_$(get-date -f yy-MM-dd--HH.mm.ss)"
+$ServerName = "MinecraftServerSkyBlock3"
+$OriginPath = "C:\" + $ServerName
+$CopyPath = "C:\FULL\" + $ServerName + "_$(get-date -f yy-MM-dd--HH.mm.ss)"
 
 
 Copy-Item $OriginPath -Filter * -Destination $CopyPath -Recurse
